@@ -18,7 +18,7 @@ const createTask= async(req, res)=> {
         const newTask = new taskModel({
             userId: userId,
             title: req.body.title,
-            descripton: req.body.description || '',
+            description: req.body.description || '',
             category: req.body.category,
             date: Date.now()
         })
